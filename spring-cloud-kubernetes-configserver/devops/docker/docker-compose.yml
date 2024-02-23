@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  spring-cloud-kubernetes-configserver:
+    image: spring-cloud-kubernetes-configserver:latest
+    ports:
+      - 8888:8888
+    volumes:
+     # - ..\..\config\dev\:/config/
+      - ..\..\config\test\:/config/

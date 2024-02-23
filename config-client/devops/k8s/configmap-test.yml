@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-client-config
+data:
+  application.properties: |
+    # Add your properties here
+    spring.profiles.active=test
+    spring.config.import=optional:
+    #http://localhost:8888/
+    my.property=This is test
